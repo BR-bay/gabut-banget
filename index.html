@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💔 Aku Membenci Perempuan Friendly 💔</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff4d6d;
+            --secondary-color: #590d22;
+            --dark-color: #1a1a2e;
+            --light-color: #f8f9fa;
+            --accent-color: #ff758f;
+            --text-color: #333;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 77, 109, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(89, 13, 34, 0.3) 0%, transparent 20%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, var(--secondary-color), var(--dark-color));
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+            border-bottom: 1px solid rgba(255, 77, 109, 0.3);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--light-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 26, 46, 0.7);
+            z-index: -1;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 0 0 15px rgba(255, 77, 109, 0.7);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 15px rgba(255, 77, 109, 0.7); }
+            50% { text-shadow: 0 0 25px rgba(255, 77, 109, 1); }
+            100% { text-shadow: 0 0 15px rgba(255, 77, 109, 0.7); }
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 77, 109, 0.6);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        /* Sad Story Section */
+        .sad-story {
+            background-color: rgba(89, 13, 34, 0.2);
+            padding: 60px 0;
+            border-top: 1px solid rgba(255, 77, 109, 0.2);
+            border-bottom: 1px solid rgba(255, 77, 109, 0.2);
+        }
+
+        .story-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .story-paragraph {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: rgba(26, 26, 46, 0.5);
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-paragraph:hover {
+            transform: translateY(-5px);
+        }
+
+        .story-paragraph::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 77, 109, 0.1) 0%, transparent 100%);
+            z-index: -1;
+        }
+
+        .story-paragraph h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .story-paragraph h3 i {
+            margin-right: 10px;
+        }
+
+        .story-paragraph p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Music Player Section */
+        .music-player {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .player-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(26, 26, 46, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 77, 109, 0.3);
+        }
+
+        .player-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+
+        .song-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .song-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: rgba(89, 13, 34, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .song-item:hover {
+            background: rgba(255, 77, 109, 0.2);
+            transform: translateX(5px);
+        }
+
+        .song-item.active {
+            background: rgba(255, 77, 109, 0.4);
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .song-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .song-number {
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .song-title {
+            font-weight: 600;
+        }
+
+        .song-duration {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .player-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .control-btn {
+            background: none;
+            border: none;
+            color: var(--light-color);
+            font-size: 1.5rem;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .control-btn:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        .play-pause-btn {
+            font-size: 2rem;
+            background: var(--primary-color);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.5);
+        }
+
+        .play-pause-btn:hover {
+            transform: scale(1.1);
+            background: var(--accent-color);
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        .time-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 0;
+            background-color: rgba(89, 13, 34, 0.1);
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            height: 250px;
+            transition: all 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Poetry Section */
+        .poetry {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .poem {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(26, 26, 46, 0.7);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            position: relative;
+            border: 1px solid rgba(255, 77, 109, 0.3);
+        }
+
+        .poem::before, .poem::after {
+            content: '"';
+            position: absolute;
+            font-size: 5rem;
+            color: rgba(255, 77, 109, 0.3);
+            font-family: serif;
+        }
+
+        .poem::before {
+            top: 20px;
+            left: 20px;
+        }
+
+        .poem::after {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .poem-line {
+            font-size: 1.2rem;
+            line-height: 2;
+            margin-bottom: 15px;
+            font-style: italic;
+            position: relative;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        .poem-line::before {
+            content: '•';
+            position: absolute;
+            left: 10px;
+            color: var(--primary-color);
+        }
+
+        /* Contact Form */
+        .contact {
+            padding: 80px 0;
+            background-color: rgba(89, 13, 34, 0.2);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(26, 26, 46, 0.7);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 77, 109, 0.3);
+            border-radius: 5px;
+            color: var(--light-color);
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s;
+        }
+
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: rgba(255, 77, 109, 0.1);
+        }
+
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        .submit-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, var(--secondary-color), var(--dark-color));
+            padding: 40px 0 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 77, 109, 0.3);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .footer-links li {
+            margin: 0 15px;
+        }
+
+        .footer-links a {
+            color: var(--light-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 0 10px;
+            color: var(--light-color);
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.5);
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        /* Heartbreak Animation */
+        .heartbreak {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0 15px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--dark-color);
+                transition: left 0.3s;
+                z-index: 999;
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .story-paragraph {
+                padding: 20px;
+            }
+            
+            .poem {
+                padding: 30px 20px;
+            }
+            
+            .contact-form {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 10px 25px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .player-container {
+                padding: 20px 15px;
+            }
+            
+            .song-item {
+                padding: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .song-duration {
+                margin-top: 5px;
+                margin-left: 25px;
+            }
+            
+            .poem-line {
+                padding-left: 30px;
+                font-size: 1rem;
+            }
+            
+            .footer-links {
+                flex-wrap: wrap;
+            }
+            
+            .footer-links li {
+                margin: 10px;
+            }
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.5);
+            z-index: 999;
+        }
+
+        .dark-mode-toggle:hover {
+            background: var(--accent-color);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Heartbroken</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">My Story</a></li>
+                    <li><a href="#music">Sad Music</a></li>
+                    <li><a href="#poetry">Poetry</a></li>
+                    <li><a href="#contact">Share Pain</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="https://images.unsplash.com/photo-1516589091380-5d60150f1225?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Broken heart background" class="hero-bg">
+        <div class="hero-content">
+            <h1>💔 Aku Membenci Perempuan Friendly 💔</h1>
+            <p>😔😭 Aku begitu mencintai seseorang, begitu memuja, begitu mengagumi, karena dia satu-satunya bintang di langit malamku... Tapi apa balasannya? 😔😭</p>
+            <a href="#story" class="btn">Baca Kisahku</a>
+        </div>
+    </section>
+
+    <!-- Sad Story Section -->
+    <section class="sad-story" id="story">
+        <div class="container">
+            <h2 class="section-title">Kisah Hatiku yang Remuk</h2>
+            <div class="story-container">
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-heart-broken"></i> Kebencian yang Tulus</h3>
+                    <p>🖤 Aku benci perempuan yang ramah ke semua cowok. Aku benci perempuan yang tidak mempunyai batas, yang bisa duduk dekat-dekat dengan lawan jenis, tertawa manja, bercanda hangat, bahkan tanpa sengaja bersentuhan ringan seolah tak ada beban. Aku benci perempuan yang bilang "aku cuma ramah, nggak lebih" padahal sikapnya menusuk hati yang mencintainya. 😡💔</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-comment-dots"></i> Chat yang Menyakitkan</h3>
+                    <p>📱 Melihat chatmu dengan dia, dengan mereka... hatiku remuk. Hancur. Berkeping-keping. 💥 Aku pikir aku cukup bagimu. Aku pikir aku satu-satunya yang kau pedulikan. Tapi ternyata kamu berbagi tawa, cerita, bahkan perhatianmu kepada yang lain. Kau bilang aku terlalu posesif, terlalu berlebihan? Tidak, aku hanya terlalu mencintaimu! Dan kamu...? Kamu seperti bermain-main dengan rasa ini. 🥀</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-mask"></i> Topeng Kebohongan</h3>
+                    <p>🫥 Aku percaya padamu. Aku berpikir kita berbeda dari pasangan lain. Aku percaya saat kamu bilang "aku cuma sayang kamu." Tapi ternyata semua itu?. Semua itu dusta yang kau tutupi dengan senyuman manis dan sikap hangatmu yang ramah. 😶‍🌫️</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-heartbeat"></i> Mati Perlahan</h3>
+                    <p>💔 Rasanya seperti mati perlahan. Rasanya seperti menelan racun sedikit demi sedikit setiap kali kulihat kau tertawa bersama orang lain. Kau menggenggam hatiku, lalu kau remas hingga pecah. Kau biarkan aku berdarah di tempat tanpa kau hiraukan sedikit pun. 😵‍💫</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-fire"></i> Kemarahan yang Membara</h3>
+                    <p>😡🔥 Aku muak dengan semua ini. Aku muak melihatmu bisa begitu dekat dengan orang lain sementara aku mati-matian menjaga diriku hanya untukmu. Aku muak melihatmu bercanda, tersenyum, tertawa, bahkan tanpa sengaja dan di sadari menyentuh lengan mereka tanpa beban, tanpa memikirkan betapa hatiku terbakar cemburu! 🔥🔥🔥</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-snowflake"></i> Dinginnya Hati</h3>
+                    <p>🚫 Aku sudah berhenti peduli. Aku sudah mati rasa. Aku sudah kehilangan semua rasaku padamu. Aku tidak peduli lagi seberapa manismu, seberapa baikmu, seberapa ramahmu. Bagiku, kamu hanya perempuan yang tidak tahu menghargai cinta tulus dari seseorang yang rela berkorban untukmu. 🧊❌</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-wind"></i> Kekosongan</h3>
+                    <p>🕳️ Aku sekarang kosong. Hampa. Tidak ada lagi namamu di hatiku. Tidak ada lagi harapan, tidak ada lagi impian bersama, tidak ada lagi masa depan. Semua mati, semua hilang, semua sirna, seperti kabut yang diterpa angin. 🌫️🌪️</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-skull"></i> Kebencian Terakhir</h3>
+                    <p>😤 Aku benci perempuan friendly. Aku benci perempuan yang bilang "aku cuma ramah" tapi tidak sadar sudah menusuk hati orang yang mencintainya. Aku benci perempuan yang lebih suka diperhatikan banyak pria tanpa di sadari nya, daripada setia menjaga satu hati. Aku benci perempuan yang bilang "aku sayang kamu" tapi sikapnya malah sebaliknya! 😡😡</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-cloud"></i> Hilangnya Kepercayaan</h3>
+                    <p>💀 Aku sudah tidak percaya lagi. Tidak percaya pada perempuan. Tidak percaya pada janji. Tidak percaya pada cinta. Semuanya hanya kata-kata kosong yang mudah terbang bersama angin. 💨💔</p>
+                </div>
+                
+                <div class="story-paragraph">
+                    <h3><i class="fas fa-heart"></i> Akhir Cerita</h3>
+                    <p>🔥 Jadi biarlah. Biar aku dingin. Biar aku beku. Biar aku mati rasa. Karena tidak ada yang lebih menyakitkan daripada mencintai seseorang yang sibuk membagi hatinya dengan orang lain. Dan sekarang, aku belajar... aku belajar membenci. 🖤❌</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player Section -->
+    <section class="music-player" id="music">
+        <div class="container">
+            <h2 class="section-title">Lagu Sedih untuk Hatimu</h2>
+            <div class="player-container">
+                <h3 class="player-title">Playlist Patah Hati</h3>
+                <ul class="song-list" id="songList">
+                    <li class="song-item" data-src="Pergi Hilang dan Lupakan.mp3">
+                        <div class="song-info">
+                            <span class="song-number">1</span>
+                            <span class="song-title">Pergi Hilang dan Lupakan</span>
+                        </div>
+                        <span class="song-duration">5:11</span>
+                    </li>
+                    <li class="song-item" data-src="mangu.mp3">
+                        <div class="song-info">
+                            <span class="song-number">2</span>
+                            <span class="song-title">mangu</span>
+                        </div>
+                        <span class="song-duration">4:32</span>
+                    </li>
+                    <li class="song-item" data-src="dukaxserena.mp3">
+                        <div class="song-info">
+                            <span class="song-number">3</span>
+                            <span class="song-title">duka x serena</span>
+                        </div>
+                        <span class="song-duration">6:14</span>
+                    </li>
+                    <li class="song-item" data-src="trauma.mp3">
+                        <div class="song-info">
+                            <span class="song-number">4</span>
+                            <span class="song-title">pesan terakhir x trauma</span>
+                        </div>
+                        <span class="song-duration">15:20</span>
+                    </li>
+                    <li class="song-item" data-src="tanpamu.mp3">
+                        <div class="song-info">
+                            <span class="song-number">5</span>
+                            <span class="song-title">tanpamu</span>
+                        </div>
+                        <span class="song-duration">4:53</span>
+                    </li>
+                </ul>
+                
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+                
+                <div class="player-controls">
+                    <button class="control-btn" id="prevBtn"><i class="fas fa-step-backward"></i></button>
+                    <button class="control-btn play-pause-btn" id="playPauseBtn"><i class="fas fa-play" id="playPauseIcon"></i></button>
+                    <button class="control-btn" id="nextBtn"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poetry Section -->
+    <section class="poetry" id="poetry">
+        <div class="container">
+            <h2 class="section-title">Puisi Patah Hati</h2>
+            <div class="poem">
+                <p class="poem-line">Aku mencintaimu dengan seluruh jiwa</p>
+                <p class="poem-line">Kau balas dengan senyuman ramah untuk semua</p>
+                <p class="poem-line">Aku berkorban hanya untukmu</p>
+                <p class="poem-line">Kau bagi-bagi hatimu tanpa tahu</p>
+                <p class="poem-line">Kini aku belajar membenci</p>
+                <p class="poem-line">Karena cinta hanya membuatku tersiksa sendiri</p>
+                <p class="poem-line">Perempuan friendly, kau hancurkan aku</p>
+                <p class="poem-line">Dengan sikapmu yang tak pernah setia pada satu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Bagikan Kesedihanmu</h2>
+            <div class="contact-form">
+                <form id="sadnessForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nama Kamu</label>
+                        <input type="text" id="name" class="form-input" placeholder="Siapa namamu?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email (opsional)</label>
+                        <input type="email" id="email" class="form-input" placeholder="email@contoh.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="sadness" class="form-label">Ceritakan Kesedihanmu</label>
+                        <textarea id="sadness" class="form-textarea" placeholder="Aku ingin berbagi rasa sakitku..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim Kesedihan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Heartbroken</div>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#poetry">Poetry</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="copyright">© 2023 Heartbroken - Semua kesedihan dilindungi oleh air mata</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioPlayer"></audio>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Music Player Functionality
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playPauseIcon = document.getElementById('playPauseIcon');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const progressBar = document.getElementById('progressBar');
+        const progressContainer = document.getElementById('progressContainer');
+        const currentTimeEl = document.getElementById('currentTime');
+        const durationEl = document.getElementById('duration');
+        const songItems = document.querySelectorAll('.song-item');
+        
+        let currentSongIndex = 0;
+        let isPlaying = false;
+        
+        // Load song
+        function loadSong(songIndex) {
+            const songItem = songItems[songIndex];
+            const songSrc = songItem.getAttribute('data-src');
+            
+            // Update active song in list
+            songItems.forEach(item => item.classList.remove('active'));
+            songItem.classList.add('active');
+            
+            // Load and play song
+            audioPlayer.src = songSrc;
+            audioPlayer.play();
+            isPlaying = true;
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
+        }
+        
+        // Play/Pause
+        function togglePlayPause() {
+            if (isPlaying) {
+                audioPlayer.pause();
+                playPauseIcon.classList.remove('fa-pause');
+                playPauseIcon.classList.add('fa-play');
+            } else {
+                audioPlayer.play();
+                playPauseIcon.classList.remove('fa-play');
+                playPauseIcon.classList.add('fa-pause');
+            }
+            isPlaying = !isPlaying;
+        }
+        
+        // Update progress bar
+        function updateProgress(e) {
+            const { duration, currentTime } = e.srcElement;
+            const progressPercent = (currentTime / duration) * 100;
+            progressBar.style.width = `${progressPercent}%`;
+            
+            // Update time display
+            const durationMinutes = Math.floor(duration / 60);
+            let durationSeconds = Math.floor(duration % 60);
+            if (durationSeconds < 10) durationSeconds = `0${durationSeconds}`;
+            
+            const currentMinutes = Math.floor(currentTime / 60);
+            let currentSeconds = Math.floor(currentTime % 60);
+            if (currentSeconds < 10) currentSeconds = `0${currentSeconds}`;
+            
+            if (duration) {
+                durationEl.textContent = `${durationMinutes}:${durationSeconds}`;
+            }
+            currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`;
+        }
+        
+        // Set progress bar on click
+        function setProgress(e) {
+            const width = this.clientWidth;
+            const clickX = e.offsetX;
+            const duration = audioPlayer.duration;
+            audioPlayer.currentTime = (clickX / width) * duration;
+        }
+        
+        // Next song
+        function nextSong() {
+            currentSongIndex++;
+            if (currentSongIndex >= songItems.length) {
+                currentSongIndex = 0;
+            }
+            loadSong(currentSongIndex);
+        }
+        
+        // Previous song
+        function prevSong() {
+            currentSongIndex--;
+            if (currentSongIndex < 0) {
+                currentSongIndex = songItems.length - 1;
+            }
+            loadSong(currentSongIndex);
+        }
+        
+        // Event Listeners
+        playPauseBtn.addEventListener('click', togglePlayPause);
+        prevBtn.addEventListener('click', prevSong);
+        nextBtn.addEventListener('click', nextSong);
+        audioPlayer.addEventListener('timeupdate', updateProgress);
+        audioPlayer.addEventListener('ended', nextSong);
+        progressContainer.addEventListener('click', setProgress);
+        
+        // Click on song in list
+        songItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentSongIndex = index;
+                loadSong(currentSongIndex);
+            });
+        });
+        
+        // Load first song
+        loadSong(currentSongIndex);
+        
+        // Heartbreak Animation
+        function createHeartbreak() {
+            const heartbreak = document.createElement('div');
+            heartbreak.classList.add('heartbreak');
+            
+            // Random heartbreak icon
+            const icons = ['💔', '❤️‍🩹', '🖤', '💔', '😢', '😭'];
+            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+            
+            heartbreak.innerHTML = randomIcon;
+            heartbreak.style.left = Math.random() * 100 + 'vw';
+            heartbreak.style.animationDuration = Math.random() * 3 + 2 + 's';
+            heartbreak.style.fontSize = Math.random() * 20 + 10 + 'px';
+            heartbreak.style.opacity = Math.random();
+            
+            document.body.appendChild(heartbreak);
+            
+            setTimeout(() => {
+                heartbreak.remove();
+            }, 5000);
+        }
+        
+        // Create heartbreaks periodically
+        setInterval(createHeartbreak, 300);
+        
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        let isDarkMode = true;
+        
+        darkModeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            
+            if (isDarkMode) {
+                document.documentElement.style.setProperty('--light-color', '#f8f9fa');
+                document.documentElement.style.setProperty('--dark-color', '#1a1a2e');
+                document.documentElement.style.setProperty('--text-color', '#333');
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            } else {
+                document.documentElement.style.setProperty('--light-color', '#1a1a2e');
+                document.documentElement.style.setProperty('--dark-color', '#f8f9fa');
+                document.documentElement.style.setProperty('--text-color', '#f8f9fa');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+        });
+        
+        // Form Submission
+        const sadnessForm = document.getElementById('sadnessForm');
+        
+        sadnessForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih telah berbagi kesedihanmu. Kamu tidak sendirian dalam rasa sakit ini. 💔');
+            sadnessForm.reset();
+        });
+    </script>
+</body>
+</html>
